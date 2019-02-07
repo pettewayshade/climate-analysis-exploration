@@ -28,13 +28,13 @@ app = Flask(__name__)
 def home():
     return (
         f"Available Routes:<br/>"
-        f'-- /api/v1.0/precipitation<br/>'
-        f'-- /api/v1.0/stations<br/>'
-        f'-- /api/v1.0/tobs</br>'
-        f'-- /api/v1.0/start<br/>'
+        f'/api/v1.0/precipitation<br/>'
+        f'/api/v1.0/stations<br/>'
+        f'/api/v1.0/tobs</br>'
+        f'/api/v1.0/start<br/>'
         f'Note: Start date must be between 2010-01-01 and 2017-08-23<br/>'
-        f'-- /api/v1.0/start/end<br/>'
-        f'Note: Start date cannot be sooner thatn 2010-01-01 and end date cannot be later than 2017-08-23'
+        f'/api/v1.0/start/end<br/>'
+        f'Note:Start date cannot be sooner that 2010-01-01 and end date cannot be later than 2017-08-23'
     )
 
 @app.route('/api/v1.0/precipitation')
